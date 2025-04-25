@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catalogue - Wikiboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">📘 Wikiboard</a>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="apropos.html">À propos</a>
+      <a href="connexion.html">Connexion</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="center">Catalogue</h1>
+    <div class="search-bar large center">
+      <input type="text" placeholder="🔍 Rechercher un jeu" />
+    </div>
+
+    <div class="card-list grid" id="catalogue"></div>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script>
+    const searchInputCatalogue = document.querySelector('input[type="text"]')
+    if (searchInputCatalogue) {
+      searchInputCatalogue.focus()
+    }
+  </script>
+  
+</body>
+</html>

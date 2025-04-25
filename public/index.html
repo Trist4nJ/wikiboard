@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wikiboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">📘 Wikiboard</a>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="apropos.html">À propos</a>
+      <a href="connexion.html">Connexion</a>
+    </nav>
+  </header>
+
+  <main class="home">
+    <h1 class="center">Bienvenue sur Wikiboard,</h1>
+    <p class="center">L'encyclopédie des jeux de société...</p>
+
+    <div class="search-bar large center">
+      <input type="text" id="search-index" placeholder="🔍 Rechercher un jeu" />
+    </div>
+
+    <section class="popular">
+      <h2 class="center">Les jeux populaires</h2>
+      <div class="card-list" id="popular-games"></div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script>
+    const searchInput = document.getElementById('search-index')
+    if (searchInput) {
+      searchInput.addEventListener('focus', () => {
+        window.location.href = 'catalogue.html'
+      })
+    }
+  </script>
+  
+</body>
+</html>

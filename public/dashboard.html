@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Admin - Wikiboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">📘 Wikiboard</a>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="apropos.html">À propos</a>
+      <a href="connexion.html" id="logout">Déconnexion</a>
+    </nav>
+  </header>
+
+  <main class="admin-page">
+    <h1 class="center">Gestion des jeux</h1>
+
+    <section>
+      <h2>Ajouter un nouveau jeu</h2>
+      <form id="add-game-form" class="admin-form">
+        <input type="text" name="id" placeholder="ID du jeu" required />
+        <input type="text" name="nom" placeholder="Nom du jeu" required />
+        <input type="text" name="description" placeholder="Description" required />
+        <input type="text" name="regles" placeholder="Règles" required />
+        <input type="text" name="date" placeholder="Date" required />
+        <input type="text" name="image" placeholder="URL de l'image" required />
+        <button type="submit">Ajouter</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Liste des jeux</h2>
+      <div id="games-list"></div>
+    </section>
+  </main>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

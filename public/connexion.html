@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connexion admin - Wikiboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">📘 Wikiboard</a>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="apropos.html">À propos</a>
+    </nav>
+  </header>
+
+  <main class="auth-page">
+    <h1 class="center">Connexion</h1>
+    <form id="login-form" class="auth-form">
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="password" name="password" placeholder="Mot de passe" required />
+      <button type="submit">Se connecter</button>
+      <p id="login-error" class="error-message"></p>
+    </form>
+  </main>
+
+  <script src="js/connexion.js"></script>
+</body>
+</html>
