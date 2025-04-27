@@ -3,7 +3,9 @@ const getIdFromURL = () => new URLSearchParams(location.search).get('id')
 
 // Affiche les jeux sur index/catalogue
 const loadGames = async () => {
-  const res = await fetch('/api/jeux')
+  //const res = await fetch('/api/jeux')
+  const res = await fetch('https://wikiboard.onrender.com/api/jeux')
+
   const jeux = await res.json()
 
   const popularContainer = document.getElementById('popular-games')

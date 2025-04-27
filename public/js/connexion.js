@@ -7,7 +7,8 @@ form.addEventListener('submit', async (e) => {
   const email = form.email.value
   const password = form.password.value
 
-  const res = await fetch('/login', {
+  //const res = await fetch('/login', {
+  const res = await fetch('https://wikiboard.onrender.com/login', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email, password })
